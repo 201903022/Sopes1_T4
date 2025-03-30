@@ -130,9 +130,14 @@ CMD ["./goweb"]
 
 ### Build and Push Docker Image
 ```bash
+dockeer login
 docker build -t your_docker_user/goweb:latest .
 docker push your_docker_user/goweb:latest
 ```
+
+![DockerBuild](./images/dockerBuild.png)
+---
+![DockerPush](./images/dockerPush.png.png)
 
 ---
 
@@ -227,7 +232,7 @@ minikube service goweb-service --url
 kubectl get all
 minikube ip
 ```
-
+![Commands](./images/kubecltCommands.png)
 ---
 
 ## ✅ Result
@@ -235,3 +240,7 @@ A Go web app displaying student ID `201903022` is now deployed and accessible vi
 - `http://goweb.local` (Ingress)
 - `http://<minikube-ip>:<NodePort>`
 
+
+
+# Result: 
+![Result](./images/result.png)
